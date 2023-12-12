@@ -12,7 +12,7 @@ list1 = matrix1.tolist()
 x_axis = list2
 y_axis = list1
 plt.plot(x_axis,y_axis)
-plt.title('title name')
-plt.xlabel('x_axis name')
-plt.ylabel('y_axis name')
+plt.title('Weight Loss Graph')
+plt.xlabel('Weight/kg')
+plt.ylabel('Date')
 plt.show()
