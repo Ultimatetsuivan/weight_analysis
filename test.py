@@ -13,7 +13,11 @@ list2 = matrix1.tolist()
 x = pd.DataFrame(list1)
 new = x.fillna(method='ffill', limit=100)
 list1 = new.values.tolist()
-print(list1)
+plt.figure()
+new.plot.line()
+plt.savefig("graph1.png")
+plt.close()
+
 BMI = []
 
 # for i in list1:
