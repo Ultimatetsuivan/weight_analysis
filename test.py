@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 #data = pd.read_csv("weight.csv",keep_default_na=False)
 
-df = pd.read_csv("weight copy.csv")
+df = pd.read_csv("csv_files/weight_no_empty.csv")
 
 matrix1 = df[df.columns[0]]
 matrix2 = df[df.columns[1]]
@@ -20,16 +20,16 @@ plt.close()
 
 BMI = []
 
-# for i in list1:
-#     BMI.append(i/(1.64*1.64))
-# print(BMI)
+for i in list1:
+    BMI.append(i/(1.64*1.64))
+print(BMI)
 
 
-# while j<8:
-#     sum = 0
-#     for i in list1:
-#         sum = sum(i)
-#         count = count + 1
-#         if count == 7:
-#             continue
-#     print(sum)
+while j<8:
+    sum = 0
+    for i in list1:
+        sum = sum(i)
+        count = count + 1
+        if count == 7:
+            continue
+    print(sum)

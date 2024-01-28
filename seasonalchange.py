@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 #data = pd.read_csv("weight.csv",keep_default_na=False)
 
-df = pd.read_csv("weight.csv")
+df = pd.read_csv("csv_files/weight.csv")
 
 df['date'] = pd.to_datetime(df['date'])
 monthly_avg = df.set_index('date').resample('M').mean()
@@ -20,5 +20,5 @@ plt.title('Monthly Average Weight')
 plt.xlabel('Month')
 plt.ylabel('Average Weight')
 plt.grid(True)
-plt.savefig('monthly.png')
+plt.savefig('graphs/monthly.png')
 plt.show()
