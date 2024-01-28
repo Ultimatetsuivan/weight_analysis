@@ -18,18 +18,18 @@ new.plot.line()
 plt.savefig("graph1.png")
 plt.close()
 
-BMI = []
+# BMI = []
 
-for i in list1:
-    BMI.append(i/(1.64*1.64))
-print(BMI)
+# for i in list1:
+#     BMI.append(i/(1.64*1.64))
+# print(BMI)
 
 
-while j<8:
-    sum = 0
-    for i in list1:
-        sum = sum(i)
-        count = count + 1
-        if count == 7:
-            continue
-    print(sum)
+# while j<8:
+#     sum = 0
+#     for i in list1:
+#         sum = sum(i)
+#         count = count + 1
+#         if count == 7:
+#             continue
+#     print(sum)
